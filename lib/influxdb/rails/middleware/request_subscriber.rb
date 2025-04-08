@@ -28,15 +28,8 @@ module InfluxDB
             controller: duration,
             view:       (payload[:view_runtime] || 0).ceil,
             db:         (payload[:db_runtime] || 0).ceil,
-            started:    start.utc,
+            started:    start.to_i,
           }
-        end
-
-        def started
-          InfluxDB.convert_timestamp(
-            start.utc,
-            configuration.client.time_precision
-          )
         end
 
         def status
