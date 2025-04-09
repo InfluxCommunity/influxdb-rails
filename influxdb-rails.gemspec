@@ -37,7 +37,7 @@ Gem::Specification.new do |spec|
   spec.add_development_dependency "rdoc"
   spec.add_development_dependency "rspec"
   spec.add_development_dependency "rspec-rails"
-  spec.add_development_dependency "rubocop", "~> 1.55.1"
+  spec.add_development_dependency "rubocop", "~> 1.75.2"
   spec.add_development_dependency "rubocop-rake"
   spec.add_development_dependency "rubocop-rspec"
   spec.add_development_dependency "sqlite3"
